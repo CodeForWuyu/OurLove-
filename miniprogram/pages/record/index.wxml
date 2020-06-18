@@ -1,0 +1,22 @@
+<!--pages/record/index.wxml-->
+<cu-custom bgColor="bg-gradual-red">
+  <view slot="content">我们的记录</view>
+</cu-custom>
+
+<view class="bg-white">
+
+    <view class="flex solid-bottom padding justify-around">
+      
+    </view>
+
+    <view class="flex solid-bottom padding justify-around">
+      <view class="bg-olive padding-sm margin-xs radius">2020年6月18日</view>
+      <view class="bg-olive padding-sm margin-xs radius">我们见面啦</view>
+    </view>
+
+
+    <view class="padding flex flex-direction">
+      <button class="cu-btn bg-yellow margin-tb-sm lg" bindtap="gotoAdd">又搞事情</button>
+    </view>
+
+  </view>

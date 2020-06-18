@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/she/index",
+    "pages/record/index",
+    "pages/addRecord/add",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Our Love",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "requiredBackgroundModes":[
+    "audio",
+    "location"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "our love",
+      "iconPath": "./images/love.png",
+      "selectedIconPath": "./images/selected_love.png"
+    },
+    {
+      "pagePath": "pages/she/index",
+      "text": "she",
+      "iconPath": "./images/girl.png",
+      "selectedIconPath": "./images/selected_girl.png"
+    },
+    {
+      "pagePath": "pages/record/index",
+      "text": "记录",
+      "iconPath": "./images/other.png",
+      "selectedIconPath": "./images/selected_other.png"
+    }
+  ]
+  },
+  "usingComponents": {
+    "cu-custom": "./colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

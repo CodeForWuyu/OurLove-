@@ -1,0 +1,4 @@
+<!--pages/addRecord/add.wxml-->
+<cu-custom bgColor="bg-gradual-red">
+  <view slot="content">又搞事情啦</view>
+</cu-custom>

@@ -1,9 +1,11 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/she/index",
     "pages/record/index",
     "pages/addRecord/add",
+    "pages/detail/detail",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

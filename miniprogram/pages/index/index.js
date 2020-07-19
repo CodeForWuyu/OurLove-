@@ -45,8 +45,8 @@ Page({
     };
 
     this.getASentence();
-    // this.setBGM();
-    // this.saveDataToLeanCloud();
+    this.setBGM();
+    
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -64,7 +64,7 @@ Page({
     var that = this;
     wx.request({
       url: 'https://v1.alapi.cn/api/qinghua',
-      method:'get',
+      method:'GET',
       header:{
         'content-type': 'application/json' // 默认值
       },

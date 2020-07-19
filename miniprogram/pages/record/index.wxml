@@ -3,19 +3,23 @@
   <view slot="content">我们的记录</view>
 </cu-custom>
 
-<view class="bg-white">
+<view class="empty_tip bg-gradual-blue margin-bottom-xs">
 
     <view class="flex solid-bottom padding justify-around">
       
     </view>
 
-    <view class="flex solid-bottom padding justify-around">
-      <view class="bg-olive padding-sm margin-xs radius">2020年6月18日</view>
-      <view class="bg-olive padding-sm margin-xs radius">我们见面啦</view>
+
+    <view class="text-center margin-top"  wx:for="{{records}}"  wx:for-item="value">
+        <view class="flex  justify-around">
+            <view class=" radius">{{value.date}}</view>
+            <view class=" radius">{{value.palace}}</view>
+        </view>
+        <view class="  margin-xs radius">{{value.desc}}</view>
     </view>
 
 
-    <view class="padding flex flex-direction">
+    <view class="Scancode padding flex flex-direction">
       <button class="cu-btn bg-yellow margin-tb-sm lg" bindtap="gotoAdd">又搞事情</button>
     </view>
 

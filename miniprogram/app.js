@@ -107,6 +107,26 @@ App({
       name: 'white',
       color: '#ffffff'
     },
+    {
+      title: '自定义-绿',
+      name: 'self-green',
+      color: '#99b898'
+    },
+    {
+      title: '自定义-黄粉',
+      name: 'self-yellow',
+      color: '#feceab'
+    },
+    {
+      title: '自定义-粉红',
+      name: 'self-pink',
+      color: '#ff847c'
+    },
+    {
+      title: '自定义-红',
+      name: 'self-red',
+      color: '#e84a5f'
+    }
   ]
   }
 })

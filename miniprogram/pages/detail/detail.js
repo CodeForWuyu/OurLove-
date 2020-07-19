@@ -1,39 +1,18 @@
-// pages/record/index.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    records:[],
-  },
 
-  //跳转到添加页
-  gotoAdd:function(){
-    wx.navigateTo({
-      url: '../addRecord/add',
-    })
-  },
-
-  //获取所有记录
-  getAllRecord:function(){
-    const db = wx.cloud.database()
-    var that = this
-    db.collection("LoveRecord").get({
-      success:function(res){
-        console.log(res.data)
-        that.setData({
-          records:res.data
-        })
-      }
-    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      this.getAllRecord()
+
   },
 
   /**
@@ -47,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-      this.getAllRecord()
+
   },
 
   /**
@@ -68,10 +47,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-      this.getAllRecord()
-      wx.stopPullDownRefresh({
-        complete: (res) => {},
-      })
+
   },
 
   /**

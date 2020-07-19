@@ -2,3 +2,58 @@
 <cu-custom bgColor="bg-gradual-red">
   <view slot="content">又搞事情啦</view>
 </cu-custom>
+
+<view class="bg-olive light margin-bottom-xs empty_tip">
+   <view class="flex solid-bottom padding justify-around">
+      
+    </view>
+
+    <view class="flex  p-xs margin-bottom-sm mb-sm ">
+      <view class="cu-tag flex-sub padding-sm margin-xs  round bg-cyan shadow">时间</view>
+      <view class="flex-twice padding-sm margin-xs round bg-cyan shadow">
+        <view class="section text-center">
+          <view class="section__title"></view>
+          <picker mode="date" value="{{date}}" start="2016-12-29" end="2070-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+         </picker>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="flex  p-xs margin-bottom-sm mb-sm margin-top">
+       <view class="cu-tag flex-sub padding-sm margin-xs round bg-cyan ">地点</view>
+      <view class="flex-twice padding-sm margin-xs round bg-cyan shadow">
+          <view class="section text-center">
+            <view class="section__title"></view>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{region[0]}} {{region[1]}} {{region[2]}}
+              </view>
+            </picker>
+          </view>
+      </view>
+    </view>
+
+
+    <view class="flex  p-xs margin-bottom-sm mb-sm margin-top">
+       <view class="cu-tag flex-sub padding-sm margin-xs round bg-cyan ">事件</view>
+      <view class="cu-btn flex-twice padding-sm margin-xs round bg-cyan {{shadow?'shadow':''}}">
+        <view class="weui-cells__title"></view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" bindinput="inputEdit"  value="{{desc}}" placeholder="腻腻歪歪"/>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="Scancode flex margin-bottom-sm">
+      <button class="flex-sub cu-btn bg-grey padding-sm margin-xs radius bind-tap "
+      bindtap="back">取消</button>
+      <button class="flex-sub  cu-btn bg-red padding-sm margin-xs radius"
+      bindtap="addDataToDatabase">确认</button>
+  </view>

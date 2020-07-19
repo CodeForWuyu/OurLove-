@@ -11,11 +11,15 @@
 
 
     <view class="text-center margin-top"  wx:for="{{records}}"  wx:for-item="value">
-        <view class="flex  justify-around">
+        
+        <view bindtap="gotoDetail" data-id="{{index}}">
+          <view class="flex  justify-around">
             <view class=" radius">{{value.date}}</view>
             <view class=" radius">{{value.palace}}</view>
+          </view>
+          <view class=" margin-xs radius">{{value.desc}}</view>
         </view>
-        <view class="  margin-xs radius">{{value.desc}}</view>
+        
     </view>
 
 
@@ -23,4 +27,4 @@
       <button class="cu-btn bg-yellow margin-tb-sm lg" bindtap="gotoAdd">又搞事情</button>
     </view>
 
-  </view>
+</view>

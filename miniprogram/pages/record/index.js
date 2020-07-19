@@ -29,6 +29,21 @@ Page({
     })
   },
 
+  //跳转到记录详情页
+  gotoDetail:function(event){
+    // wx.navigateTo("../detail/detail?index={{index}}")
+    var index = parseInt(event.currentTarget.dataset.id);
+    // console.log( index);
+    // console.log(this.data.records[index]);
+    var recordId = this.data.records[index]._id;
+    // console.log(recordId);
+    var url= "../detail/detail?id="+recordId;
+    // console.log(url)
+    wx.navigateTo({
+      url: url,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

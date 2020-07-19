@@ -1,2 +1,31 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<cu-custom bgColor="bg-gradual-red">
+  <view slot="content">记录详情</view>
+</cu-custom>
+
+
+<view class="bg-olive light margin-bottom-xs empty_tip">
+
+    <view class="flex solid-bottom padding justify-around">
+    </view>
+
+    <view class="text-center margin-top" >
+        <view class=" radius margin-bottom">
+          <text class=" text-xl text-shadow " >{{date}}</text>
+        </view>
+        <view class=" radius margin-bottom">
+          <text class=" text-xl text-shadow " >{{place}}</text>
+        </view>
+        <view class=" radius margin-bottom">
+          <text class=" text-xl text-shadow " >{{desc}}</text>
+        </view>
+    </view> 
+
+    <view class="Scancode flex margin-bottom-sm">
+      <button class="flex-sub cu-btn bg-grey padding-sm margin-xs radius bind-tap "
+      bindtap="back">返回</button>
+      <button class="flex-sub  cu-btn bg-red padding-sm margin-xs radius"
+      bindtap="deleteRecord">删除</button>
+  </view>
+
+</view>
